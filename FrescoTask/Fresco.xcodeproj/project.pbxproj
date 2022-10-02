@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EFDACE665B9B98FB1882435 /* Pods_Fresco_FrescoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA843E40D89A89F31EC9F51E /* Pods_Fresco_FrescoUITests.framework */; };
+		43775779D56B27E4673BA660 /* Pods_FrescoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8D8B6354F1C739731E179F /* Pods_FrescoTests.framework */; };
+		4621A3DF28E5E68A008DFE4E /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621A3DE28E5E68A008DFE4E /* IngredientView.swift */; };
+		4621A3E228E6270B008DFE4E /* MockStreamAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621A3E128E6270B008DFE4E /* MockStreamAPI.swift */; };
+		4621A3E428E62780008DFE4E /* input_long.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4621A3E328E62780008DFE4E /* input_long.csv */; };
+		4621A3E628E7583C008DFE4E /* UILabel+RxUpdateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621A3E528E7583C008DFE4E /* UILabel+RxUpdateText.swift */; };
+		4621A3E828E84AA9008DFE4E /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621A3E728E84AA9008DFE4E /* CircularProgressBarView.swift */; };
+		466A5AED28E1B747009C367B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5AEC28E1B747009C367B /* AppDelegate.swift */; };
+		466A5AEF28E1B747009C367B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5AEE28E1B747009C367B /* SceneDelegate.swift */; };
+		466A5AF128E1B747009C367B /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5AF028E1B747009C367B /* BrowserViewController.swift */; };
+		466A5AF628E1B74A009C367B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466A5AF528E1B74A009C367B /* Assets.xcassets */; };
+		466A5AF928E1B74A009C367B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466A5AF728E1B74A009C367B /* LaunchScreen.storyboard */; };
+		466A5B0428E1B74A009C367B /* BeerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B0328E1B74A009C367B /* BeerAPITests.swift */; };
+		466A5B0E28E1B74A009C367B /* FrescoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B0D28E1B74A009C367B /* FrescoUITests.swift */; };
+		466A5B1028E1B74A009C367B /* FrescoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B0F28E1B74A009C367B /* FrescoUITestsLaunchTests.swift */; };
+		466A5B1D28E1B755009C367B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B1C28E1B755009C367B /* Coordinator.swift */; };
+		466A5B1F28E1B78E009C367B /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B1E28E1B78E009C367B /* BrowserViewModel.swift */; };
+		466A5B2428E1B7ED009C367B /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2328E1B7ED009C367B /* BeerDetailsViewController.swift */; };
+		466A5B2628E1B80B009C367B /* BeerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2528E1B80B009C367B /* BeerDetailsViewModel.swift */; };
+		466A5B2828E1B82B009C367B /* WeighViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2728E1B82B009C367B /* WeighViewController.swift */; };
+		466A5B2A28E1B845009C367B /* WeighViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2928E1B845009C367B /* WeighViewModel.swift */; };
+		466A5B2E28E1B8D9009C367B /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2D28E1B8D9009C367B /* BeerAPI.swift */; };
+		466A5B3028E1B8E4009C367B /* BeerAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B2F28E1B8E4009C367B /* BeerAPIType.swift */; };
+		466A5B3328E1BC1F009C367B /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B3228E1BC1F009C367B /* Beer.swift */; };
+		466A5B3528E1E069009C367B /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B3428E1E069009C367B /* BeerTableViewCell.swift */; };
+		466A5B3828E1E2C2009C367B /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A5B3728E1E2C2009C367B /* UIImage+URL.swift */; };
+		46CB50E128E8C20F0014E208 /* WeightEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB50E028E8C20F0014E208 /* WeightEvent.swift */; };
+		46CB50E328E8C9C00014E208 /* MockBeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB50E228E8C9C00014E208 /* MockBeerAPI.swift */; };
+		46CB50E528E8CA160014E208 /* beer_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 46CB50E428E8CA160014E208 /* beer_success.json */; };
+		46CB50E728E9A2C10014E208 /* BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB50E628E9A2C10014E208 /* BrowserTests.swift */; };
+		46CB50E928E9A8A80014E208 /* BeerDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB50E828E9A8A80014E208 /* BeerDetailsTests.swift */; };
+		46CB50EB28E9AFD50014E208 /* WeighTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB50EA28E9AFD50014E208 /* WeighTests.swift */; };
+		C90BE65E8B989CDD632A8BFE /* Pods_Fresco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4191817DEB9421CAAA116C11 /* Pods_Fresco.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		466A5B0028E1B74A009C367B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 466A5AE128E1B747009C367B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 466A5AE828E1B747009C367B;
+			remoteInfo = Fresco;
+		};
+		466A5B0A28E1B74A009C367B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 466A5AE128E1B747009C367B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 466A5AE828E1B747009C367B;
+			remoteInfo = Fresco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04AFB2178C80B82E50145EAD /* Pods-Fresco-FrescoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresco-FrescoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fresco-FrescoUITests/Pods-Fresco-FrescoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3039F9E0D6380839F55606AC /* Pods-Fresco-FrescoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresco-FrescoUITests.release.xcconfig"; path = "Target Support Files/Pods-Fresco-FrescoUITests/Pods-Fresco-FrescoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4191817DEB9421CAAA116C11 /* Pods_Fresco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fresco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4621A3DE28E5E68A008DFE4E /* IngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
+		4621A3E128E6270B008DFE4E /* MockStreamAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStreamAPI.swift; sourceTree = "<group>"; };
+		4621A3E328E62780008DFE4E /* input_long.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input_long.csv; sourceTree = "<group>"; };
+		4621A3E528E7583C008DFE4E /* UILabel+RxUpdateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+RxUpdateText.swift"; sourceTree = "<group>"; };
+		4621A3E728E84AA9008DFE4E /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
+		466A5AE928E1B747009C367B /* Fresco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fresco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		466A5AEC28E1B747009C367B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		466A5AEE28E1B747009C367B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		466A5AF028E1B747009C367B /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		466A5AF528E1B74A009C367B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		466A5AF828E1B74A009C367B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		466A5AFA28E1B74A009C367B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466A5AFF28E1B74A009C367B /* FrescoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrescoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		466A5B0328E1B74A009C367B /* BeerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPITests.swift; sourceTree = "<group>"; };
+		466A5B0928E1B74A009C367B /* FrescoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrescoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		466A5B0D28E1B74A009C367B /* FrescoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrescoUITests.swift; sourceTree = "<group>"; };
+		466A5B0F28E1B74A009C367B /* FrescoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrescoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		466A5B1C28E1B755009C367B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		466A5B1E28E1B78E009C367B /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
+		466A5B2328E1B7ED009C367B /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
+		466A5B2528E1B80B009C367B /* BeerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewModel.swift; sourceTree = "<group>"; };
+		466A5B2728E1B82B009C367B /* WeighViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighViewController.swift; sourceTree = "<group>"; };
+		466A5B2928E1B845009C367B /* WeighViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighViewModel.swift; sourceTree = "<group>"; };
+		466A5B2D28E1B8D9009C367B /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
+		466A5B2F28E1B8E4009C367B /* BeerAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPIType.swift; sourceTree = "<group>"; };
+		466A5B3228E1BC1F009C367B /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		466A5B3428E1E069009C367B /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		466A5B3728E1E2C2009C367B /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
+		46CB50E028E8C20F0014E208 /* WeightEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightEvent.swift; sourceTree = "<group>"; };
+		46CB50E228E8C9C00014E208 /* MockBeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBeerAPI.swift; sourceTree = "<group>"; };
+		46CB50E428E8CA160014E208 /* beer_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = beer_success.json; sourceTree = "<group>"; };
+		46CB50E628E9A2C10014E208 /* BrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserTests.swift; sourceTree = "<group>"; };
+		46CB50E828E9A8A80014E208 /* BeerDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsTests.swift; sourceTree = "<group>"; };
+		46CB50EA28E9AFD50014E208 /* WeighTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighTests.swift; sourceTree = "<group>"; };
+		7E6DC85229E0DC24B2413DD9 /* Pods-Fresco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresco.debug.xcconfig"; path = "Target Support Files/Pods-Fresco/Pods-Fresco.debug.xcconfig"; sourceTree = "<group>"; };
+		8A8D8B6354F1C739731E179F /* Pods_FrescoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrescoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A98DA60D0834F4A35D559DC /* Pods-FrescoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrescoTests.debug.xcconfig"; path = "Target Support Files/Pods-FrescoTests/Pods-FrescoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4523D79C9B15A5D916F7B0 /* Pods-Fresco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresco.release.xcconfig"; path = "Target Support Files/Pods-Fresco/Pods-Fresco.release.xcconfig"; sourceTree = "<group>"; };
+		BA843E40D89A89F31EC9F51E /* Pods_Fresco_FrescoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fresco_FrescoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DD6085D27EE9937BEB099F /* Pods-FrescoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrescoTests.release.xcconfig"; path = "Target Support Files/Pods-FrescoTests/Pods-FrescoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		466A5AE628E1B747009C367B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90BE65E8B989CDD632A8BFE /* Pods_Fresco.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5AFC28E1B74A009C367B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43775779D56B27E4673BA660 /* Pods_FrescoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5B0628E1B74A009C367B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFDACE665B9B98FB1882435 /* Pods_Fresco_FrescoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B13060F5D30A9DE73D709D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DC85229E0DC24B2413DD9 /* Pods-Fresco.debug.xcconfig */,
+				AF4523D79C9B15A5D916F7B0 /* Pods-Fresco.release.xcconfig */,
+				04AFB2178C80B82E50145EAD /* Pods-Fresco-FrescoUITests.debug.xcconfig */,
+				3039F9E0D6380839F55606AC /* Pods-Fresco-FrescoUITests.release.xcconfig */,
+				9A98DA60D0834F4A35D559DC /* Pods-FrescoTests.debug.xcconfig */,
+				D7DD6085D27EE9937BEB099F /* Pods-FrescoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4621A3E028E5E692008DFE4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4621A3DE28E5E68A008DFE4E /* IngredientView.swift */,
+				466A5B3428E1E069009C367B /* BeerTableViewCell.swift */,
+				4621A3E728E84AA9008DFE4E /* CircularProgressBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		466A5AE028E1B747009C367B = {
+			isa = PBXGroup;
+			children = (
+				466A5AEB28E1B747009C367B /* Fresco */,
+				466A5B0228E1B74A009C367B /* FrescoTests */,
+				466A5B0C28E1B74A009C367B /* FrescoUITests */,
+				466A5AEA28E1B747009C367B /* Products */,
+				29B13060F5D30A9DE73D709D /* Pods */,
+				664C89C64D8C61CBE84C9E73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		466A5AEA28E1B747009C367B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				466A5AE928E1B747009C367B /* Fresco.app */,
+				466A5AFF28E1B74A009C367B /* FrescoTests.xctest */,
+				466A5B0928E1B74A009C367B /* FrescoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		466A5AEB28E1B747009C367B /* Fresco */ = {
+			isa = PBXGroup;
+			children = (
+				4621A3E328E62780008DFE4E /* input_long.csv */,
+				4621A3E028E5E692008DFE4E /* Components */,
+				466A5B3628E1E2AA009C367B /* Extensions */,
+				466A5B2B28E1B85D009C367B /* Coordinators */,
+				466A5B2C28E1B871009C367B /* APIs */,
+				466A5B3128E1BC0E009C367B /* Models */,
+				466A5B2028E1B7B0009C367B /* BrowserScreen */,
+				466A5B2228E1B7D8009C367B /* WeighScreen */,
+				466A5B2128E1B7C6009C367B /* BeerDetailsScreen */,
+				466A5AEC28E1B747009C367B /* AppDelegate.swift */,
+				466A5AEE28E1B747009C367B /* SceneDelegate.swift */,
+				466A5AF528E1B74A009C367B /* Assets.xcassets */,
+				466A5AF728E1B74A009C367B /* LaunchScreen.storyboard */,
+				466A5AFA28E1B74A009C367B /* Info.plist */,
+			);
+			path = Fresco;
+			sourceTree = "<group>";
+		};
+		466A5B0228E1B74A009C367B /* FrescoTests */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B0328E1B74A009C367B /* BeerAPITests.swift */,
+				46CB50E228E8C9C00014E208 /* MockBeerAPI.swift */,
+				46CB50E428E8CA160014E208 /* beer_success.json */,
+				46CB50E628E9A2C10014E208 /* BrowserTests.swift */,
+				46CB50E828E9A8A80014E208 /* BeerDetailsTests.swift */,
+				46CB50EA28E9AFD50014E208 /* WeighTests.swift */,
+			);
+			path = FrescoTests;
+			sourceTree = "<group>";
+		};
+		466A5B0C28E1B74A009C367B /* FrescoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B0D28E1B74A009C367B /* FrescoUITests.swift */,
+				466A5B0F28E1B74A009C367B /* FrescoUITestsLaunchTests.swift */,
+			);
+			path = FrescoUITests;
+			sourceTree = "<group>";
+		};
+		466A5B2028E1B7B0009C367B /* BrowserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				466A5AF028E1B747009C367B /* BrowserViewController.swift */,
+				466A5B1E28E1B78E009C367B /* BrowserViewModel.swift */,
+			);
+			path = BrowserScreen;
+			sourceTree = "<group>";
+		};
+		466A5B2128E1B7C6009C367B /* BeerDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B2328E1B7ED009C367B /* BeerDetailsViewController.swift */,
+				466A5B2528E1B80B009C367B /* BeerDetailsViewModel.swift */,
+			);
+			path = BeerDetailsScreen;
+			sourceTree = "<group>";
+		};
+		466A5B2228E1B7D8009C367B /* WeighScreen */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B2728E1B82B009C367B /* WeighViewController.swift */,
+				466A5B2928E1B845009C367B /* WeighViewModel.swift */,
+			);
+			path = WeighScreen;
+			sourceTree = "<group>";
+		};
+		466A5B2B28E1B85D009C367B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B1C28E1B755009C367B /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		466A5B2C28E1B871009C367B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B2D28E1B8D9009C367B /* BeerAPI.swift */,
+				466A5B2F28E1B8E4009C367B /* BeerAPIType.swift */,
+				4621A3E128E6270B008DFE4E /* MockStreamAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		466A5B3128E1BC0E009C367B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B3228E1BC1F009C367B /* Beer.swift */,
+				46CB50E028E8C20F0014E208 /* WeightEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		466A5B3628E1E2AA009C367B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				466A5B3728E1E2C2009C367B /* UIImage+URL.swift */,
+				4621A3E528E7583C008DFE4E /* UILabel+RxUpdateText.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		664C89C64D8C61CBE84C9E73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4191817DEB9421CAAA116C11 /* Pods_Fresco.framework */,
+				BA843E40D89A89F31EC9F51E /* Pods_Fresco_FrescoUITests.framework */,
+				8A8D8B6354F1C739731E179F /* Pods_FrescoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		466A5AE828E1B747009C367B /* Fresco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466A5B1328E1B74A009C367B /* Build configuration list for PBXNativeTarget "Fresco" */;
+			buildPhases = (
+				243771F607B9CB11AA90E51E /* [CP] Check Pods Manifest.lock */,
+				466A5AE528E1B747009C367B /* Sources */,
+				466A5AE628E1B747009C367B /* Frameworks */,
+				466A5AE728E1B747009C367B /* Resources */,
+				A635473AB43A12E8453C8AE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fresco;
+			productName = Fresco;
+			productReference = 466A5AE928E1B747009C367B /* Fresco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		466A5AFE28E1B74A009C367B /* FrescoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466A5B1628E1B74A009C367B /* Build configuration list for PBXNativeTarget "FrescoTests" */;
+			buildPhases = (
+				0F784BAEE66E24254B7F73E7 /* [CP] Check Pods Manifest.lock */,
+				466A5AFB28E1B74A009C367B /* Sources */,
+				466A5AFC28E1B74A009C367B /* Frameworks */,
+				466A5AFD28E1B74A009C367B /* Resources */,
+				10352538C1349834829B2A17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				466A5B0128E1B74A009C367B /* PBXTargetDependency */,
+			);
+			name = FrescoTests;
+			productName = FrescoTests;
+			productReference = 466A5AFF28E1B74A009C367B /* FrescoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		466A5B0828E1B74A009C367B /* FrescoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466A5B1928E1B74A009C367B /* Build configuration list for PBXNativeTarget "FrescoUITests" */;
+			buildPhases = (
+				0D2E1BC6433486A90F32B353 /* [CP] Check Pods Manifest.lock */,
+				466A5B0528E1B74A009C367B /* Sources */,
+				466A5B0628E1B74A009C367B /* Frameworks */,
+				466A5B0728E1B74A009C367B /* Resources */,
+				A9303E336B14A8FDBF0BF5CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				466A5B0B28E1B74A009C367B /* PBXTargetDependency */,
+			);
+			name = FrescoUITests;
+			productName = FrescoUITests;
+			productReference = 466A5B0928E1B74A009C367B /* FrescoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		466A5AE128E1B747009C367B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					466A5AE828E1B747009C367B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					466A5AFE28E1B74A009C367B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 466A5AE828E1B747009C367B;
+					};
+					466A5B0828E1B74A009C367B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 466A5AE828E1B747009C367B;
+					};
+				};
+			};
+			buildConfigurationList = 466A5AE428E1B747009C367B /* Build configuration list for PBXProject "Fresco" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 466A5AE028E1B747009C367B;
+			productRefGroup = 466A5AEA28E1B747009C367B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				466A5AE828E1B747009C367B /* Fresco */,
+				466A5AFE28E1B74A009C367B /* FrescoTests */,
+				466A5B0828E1B74A009C367B /* FrescoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		466A5AE728E1B747009C367B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466A5AF928E1B74A009C367B /* LaunchScreen.storyboard in Resources */,
+				466A5AF628E1B74A009C367B /* Assets.xcassets in Resources */,
+				4621A3E428E62780008DFE4E /* input_long.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5AFD28E1B74A009C367B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CB50E528E8CA160014E208 /* beer_success.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5B0728E1B74A009C367B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2E1BC6433486A90F32B353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fresco-FrescoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F784BAEE66E24254B7F73E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrescoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10352538C1349834829B2A17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrescoTests/Pods-FrescoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrescoTests/Pods-FrescoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrescoTests/Pods-FrescoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		243771F607B9CB11AA90E51E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fresco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A635473AB43A12E8453C8AE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fresco/Pods-Fresco-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fresco/Pods-Fresco-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fresco/Pods-Fresco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9303E336B14A8FDBF0BF5CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fresco-FrescoUITests/Pods-Fresco-FrescoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fresco-FrescoUITests/Pods-Fresco-FrescoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fresco-FrescoUITests/Pods-Fresco-FrescoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		466A5AE528E1B747009C367B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466A5B2628E1B80B009C367B /* BeerDetailsViewModel.swift in Sources */,
+				4621A3DF28E5E68A008DFE4E /* IngredientView.swift in Sources */,
+				466A5B1D28E1B755009C367B /* Coordinator.swift in Sources */,
+				466A5B1F28E1B78E009C367B /* BrowserViewModel.swift in Sources */,
+				466A5B3028E1B8E4009C367B /* BeerAPIType.swift in Sources */,
+				466A5B2A28E1B845009C367B /* WeighViewModel.swift in Sources */,
+				466A5AF128E1B747009C367B /* BrowserViewController.swift in Sources */,
+				466A5AED28E1B747009C367B /* AppDelegate.swift in Sources */,
+				466A5B3828E1E2C2009C367B /* UIImage+URL.swift in Sources */,
+				466A5B3328E1BC1F009C367B /* Beer.swift in Sources */,
+				4621A3E828E84AA9008DFE4E /* CircularProgressBarView.swift in Sources */,
+				466A5B2E28E1B8D9009C367B /* BeerAPI.swift in Sources */,
+				466A5B3528E1E069009C367B /* BeerTableViewCell.swift in Sources */,
+				4621A3E628E7583C008DFE4E /* UILabel+RxUpdateText.swift in Sources */,
+				466A5AEF28E1B747009C367B /* SceneDelegate.swift in Sources */,
+				46CB50E128E8C20F0014E208 /* WeightEvent.swift in Sources */,
+				466A5B2428E1B7ED009C367B /* BeerDetailsViewController.swift in Sources */,
+				4621A3E228E6270B008DFE4E /* MockStreamAPI.swift in Sources */,
+				466A5B2828E1B82B009C367B /* WeighViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5AFB28E1B74A009C367B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CB50E928E9A8A80014E208 /* BeerDetailsTests.swift in Sources */,
+				46CB50E328E8C9C00014E208 /* MockBeerAPI.swift in Sources */,
+				46CB50E728E9A2C10014E208 /* BrowserTests.swift in Sources */,
+				46CB50EB28E9AFD50014E208 /* WeighTests.swift in Sources */,
+				466A5B0428E1B74A009C367B /* BeerAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466A5B0528E1B74A009C367B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466A5B1028E1B74A009C367B /* FrescoUITestsLaunchTests.swift in Sources */,
+				466A5B0E28E1B74A009C367B /* FrescoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		466A5B0128E1B74A009C367B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 466A5AE828E1B747009C367B /* Fresco */;
+			targetProxy = 466A5B0028E1B74A009C367B /* PBXContainerItemProxy */;
+		};
+		466A5B0B28E1B74A009C367B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 466A5AE828E1B747009C367B /* Fresco */;
+			targetProxy = 466A5B0A28E1B74A009C367B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		466A5AF728E1B74A009C367B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				466A5AF828E1B74A009C367B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		466A5B1128E1B74A009C367B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		466A5B1228E1B74A009C367B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		466A5B1428E1B74A009C367B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6DC85229E0DC24B2413DD9 /* Pods-Fresco.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fresco/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.Fresco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		466A5B1528E1B74A009C367B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4523D79C9B15A5D916F7B0 /* Pods-Fresco.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fresco/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.Fresco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		466A5B1728E1B74A009C367B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A98DA60D0834F4A35D559DC /* Pods-FrescoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.FrescoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresco.app/Fresco";
+			};
+			name = Debug;
+		};
+		466A5B1828E1B74A009C367B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7DD6085D27EE9937BEB099F /* Pods-FrescoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.FrescoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fresco.app/Fresco";
+			};
+			name = Release;
+		};
+		466A5B1A28E1B74A009C367B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AFB2178C80B82E50145EAD /* Pods-Fresco-FrescoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.FrescoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fresco;
+			};
+			name = Debug;
+		};
+		466A5B1B28E1B74A009C367B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3039F9E0D6380839F55606AC /* Pods-Fresco-FrescoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Eoin.FrescoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fresco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		466A5AE428E1B747009C367B /* Build configuration list for PBXProject "Fresco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466A5B1128E1B74A009C367B /* Debug */,
+				466A5B1228E1B74A009C367B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466A5B1328E1B74A009C367B /* Build configuration list for PBXNativeTarget "Fresco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466A5B1428E1B74A009C367B /* Debug */,
+				466A5B1528E1B74A009C367B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466A5B1628E1B74A009C367B /* Build configuration list for PBXNativeTarget "FrescoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466A5B1728E1B74A009C367B /* Debug */,
+				466A5B1828E1B74A009C367B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466A5B1928E1B74A009C367B /* Build configuration list for PBXNativeTarget "FrescoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466A5B1A28E1B74A009C367B /* Debug */,
+				466A5B1B28E1B74A009C367B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 466A5AE128E1B747009C367B /* Project object */;
+}
