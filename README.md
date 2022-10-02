@@ -28,6 +28,8 @@ I do not have a refresh method for when the network call fails. I would add this
 
 I did not complete the extra requirements. 
 
+The beer image is fetched on the main thread which I didn't get around to fixing. 
+
 ## Dependencies
 
 I used RxSwift and Snapkit, as I use these in my current role. I felt that using these to a certain degree here would both help me speed the process up, and help to give a more accurate picture of where I'm at.
